@@ -1,0 +1,15 @@
+.header-with-background {
+    background-image: url('assets/bare-n-simple-background.jpg');
+    /* Add other background properties (e.g., background-size, background-position) as needed */
+    
+}
+
+header
+h1 {
+color: black;
+}
+
+header
+p {
+color: black;
+}
