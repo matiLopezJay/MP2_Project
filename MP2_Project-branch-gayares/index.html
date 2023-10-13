@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>BareNSimple Online Shop</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/logo1.jpg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/imports.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!"><img src="assets/logo1.jpg" style=" width: 40px;" alt="..."> Bare N Simple
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            <li><a class="dropdown-item nav-link dropdown-toggle" id="navbarCategory" href="#!"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="py-5" style="background-image: url('assets/bare-n-simple-background.jpg');">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Don't Miss Our Big Sale!</h1>
+                <p class="lead fw-normal mb-0">Get as much as 40% DISCOUNT on our products</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/Cleanser/DSCF5421.JPG" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Hydro Boost</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-dark w-50 d-grid gap-2 col-6 mx-auto mb-4"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Add to Cart
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row product-1">
+                                                <div class="product-mesh1 col-6">
+                                                    <img class="card-img-top" src="assets/Cleanser/DSCF5421.JPG"
+                                                        alt="..." />
+
+
+                                                </div>
+
+                                                <div class="product-mesh1 col-6">
+                                                    <h1><strong>Hydro Boost</strong></h1>
+                                                    <p class="text-secondary">Product Code : ISP000001</p>
+                                                    <div
+                                                        class="rating d-flex justify-content-left medium text-warning mb-2 pe-2">
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill"></div>
+                                                    </div>
+                                                    <p class="mt-3"><strong>Availability :</strong> In Stock</p>
+                                                    <p><strong>Condition :</strong> New</p>
+                                                    <h4 class="mt-4 mb-3 text-dark"><strong>$40.00 - $80.00</strong>
+                                                    </h4>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option1" autocomplete="off" checked>
+                                                    <label class="btn" for="option1">5 oz</label>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option2" autocomplete="off" checked>
+                                                    <label class="btn" for="option2">7.8 oz</label>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option3" autocomplete="off" checked>
+                                                    <label class="btn" for="option3">16 oz</label>
+                                                    </select> <br>
+                                                    <label for="quantity" class="mt-4 me-1 ms-2">Quantity:</label>
+                                                    <input type="Number" value="1" class="mt-4" style="width: 75px;">
+
+                                                    <div class="product-details mt-5 col-12">
+                                                        <h3>Product Details</h3>
+                                                        <p>Gently and thoroughly cleanse skin while boosting hydration
+                                                            with this fragrance-free cleansing gel. Featuring
+                                                            dermatologist-recognized Hyaluronic Acid, this lightweight
+                                                            cleanser increases skin's hydration level and locks in
+                                                            moisture. Using innovative technology that respects skin's
+                                                            moisture barrier, this cleanser effectively washes away
+                                                            dirt, oil and makeup without leaving skin feeling dry or
+                                                            tight. It transforms into a silky lather, and it rinses
+                                                            easily, leaving skin feeling refreshingly clean and soft.
+                                                        <ul>
+                                                            <li>Fragrance-free hydrating gel facial cleanser.</li>
+                                                            <li> Hyaluronic Acid formula locks in moisture.</li>
+                                                            <li> Dermatologist tested, hypoallergenic and
+                                                                non-comedogenic.</li>
+                                                            <li> Clinically tested to be gentle on even the most
+                                                                sensitive skin, including eczema-prone, atopic
+                                                                dermatitis-prone, and acne-prone skin.</li>
+                                                            <li>Formulated without soap, parabens, dyes, phthalates and
+                                                                alcohol.</li>
+                                                        </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/SunScreens/0C06EF90-DE71-41F9-94E5-A3DB0E113EF9.jpg"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Banana Boat</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Product actions-->
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-dark w-50 d-grid gap-2 col-6 mx-auto mb-4"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            Add to Cart
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row product-1">
+                                                <div class="product-mesh1 col-6">
+                                                    <img class="card-img-top"
+                                                        src="assets/SunScreens/0C06EF90-DE71-41F9-94E5-A3DB0E113EF9.jpg"
+                                                        alt="..." />
+
+
+                                                </div>
+
+                                                <div class="product-mesh1 col-6">
+                                                    <h1><strong>Banana Boat</strong></h1>
+                                                    <p class="text-secondary">Product Code : ISP000002</p>
+                                                    <div
+                                                        class="rating d-flex justify-content-left medium text-warning mb-2 pe-2">
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill"></div>
+                                                    </div>
+                                                    <p class="mt-3"><strong>Availability :</strong> In Stock</p>
+                                                    <p><strong>Condition :</strong> New</p>
+                                                    <h4 class="mt-4 mb-3 text-dark"><span
+                                                            class="text-muted text-decoration-line-through me-1">$20.00</span><strong>$18.00</strong>
+                                                    </h4>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option4" autocomplete="off" checked>
+                                                    <label class="btn" for="option4">SPF 50 (Ultra) </label>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option5" autocomplete="off" checked>
+                                                    <label class="btn" for="option5">SPF 50 (Coolzone)</label>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option6" autocomplete="off" checked>
+                                                    <label class="btn" for="option6">SPF 65 (Ultra)</label>
+                                                    </select> <br>
+                                                    <label for="quantity" class="mt-4 me-1 ms-2">Quantity:</label>
+                                                    <input type="Number" value="1" class="mt-4" style="width: 75px;">
+
+                                                    <div class="product-details mt-5 col-12">
+                                                        <h3>Product Details</h3>
+                                                        <p>Spend more time outside doing what you love! Banana Boat®
+                                                            is a high-performance sunscreen
+                                                            specifically designed for the active sports enthusiast who
+                                                            doesn’t want to slow down when out in the sun. Perfect for
+                                                            the sweatiest outdoor activities, this lightweight,
+                                                            breathable formula provides clinically proven UVA/UVB
+                                                            protection, and is free from oxybenzone and octinoxate.
+                                                        <ul>
+                                                            <li>Sport-strength sun protection that doesn’t play around
+                                                            </li>
+                                                            <li> Clinically proven UVA/UVB protection</li>
+                                                            <li> High endurance vs. sweat & water
+                                                            </li>
+                                                            <li> Our highest level of SPF made without oxybenzone and
+                                                                octinoxate</li>
+                                                            <li>Free from oxybenzone and octinoxate
+                                                            </li>
+                                                            <li>Water resistant up to 80 minutes
+                                                            </li>
+                                                            <li>Non-greasy
+                                                            </li>
+                                                        </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets/SunScreens/IMG_4014.JPG" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Neutrogena Clear Face </h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$50.00</span>
+                                $25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-dark w-50 d-grid gap-2 col-6 mx-auto mb-4"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            Add to Cart
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row product-1">
+                                                <div class="product-mesh1 col-6">
+                                                    <img class="card-img-top" src="assets/SunScreens/IMG_4014.JPG"
+                                                        alt="..." style="object-fit: fill;" />
+
+
+                                                </div>
+
+                                                <div class="product-mesh1 col-6">
+                                                    <h1><strong>Neutrogena Clear Face</strong></h1>
+                                                    <p class="text-secondary">Product Code : ISP000003</p>
+                                                    <div
+                                                        class="rating d-flex justify-content-left medium text-warning mb-2 pe-2">
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill pe-2"></div>
+                                                        <div class="bi-star-fill"></div>
+                                                    </div>
+                                                    <p class="mt-3"><strong>Availability :</strong> In Stock</p>
+                                                    <p><strong>Condition :</strong> New</p>
+                                                    <h4 class="mt-4 mb-3 text-dark"><span
+                                                        class="text-muted text-decoration-line-through me-1">$50.00</span><strong>$25.00</strong>
+                                                </h4>
+                                                    <input type="radio" class="btn-check" name="options-base"
+                                                        id="option7" autocomplete="off" checked>
+                                                    <label class="btn" for="option7">3 oz</label>
+                                                    
+                                                    </select> <br>
+                                                    <label for="quantity" class="mt-4 me-1 ms-2">Quantity:</label>
+                                                    <input type="Number" value="1" class="mt-4" style="width: 75px;">
+
+                                                    <div class="product-details mt-5 col-12">
+                                                        <h3>Product Details</h3>
+                                                        <p>Our best-selling, oil-free sunscreen for acne-prone skin is
+                                                            specially formulated with Helioplex® Technology. It provides
+                                                            superior broad spectrum UVA/UVB protection, without causing
+                                                            breakouts. Perfect for the face and body, this liquid
+                                                            sunscreen lotion has a water-light texture that leaves a
+                                                            weightless, matte finish so skin can breathe.
+                                                        <ul>
+                                                            <li>Non-comedogenic (won't clog pores)
+                                                            </li>
+                                                            <li>Fragrance-free sunscreen
+                                                            </li>
+                                                            <li> Water resistant (80 minutes)
+                                                            </li>
+                                                            <li> Oxybenzone-free
+                                                            </li>
+                                                            <li>Broad Spectrum UVA/UVB
+                                                            </li>
+                                                            <li>Oil-free
+                                                            </li>
+                                                        </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                $40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Sale Item</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$50.00</span>
+                                $25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fancy Product</h5>
+                                <!-- Product price-->
+                                $120.00 - $280.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Special Item</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Popular Item</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star"></div>
+                                </div>
+                                <!-- Product price-->
+                                $40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; BareNSimple 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
