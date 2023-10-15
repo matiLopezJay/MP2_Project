@@ -17,20 +17,6 @@
             font-family: 'Roboto', sans-serif; /* Use Roboto from Google Fonts */
         }
 
-        .container {
-            width: 60%; /* Full-width container */
-            padding: 0; /* Remove default padding */
-        }
-
-        
-        /* Responsive adjustments */
-        @media (min-width: 768px) {
-            .container {
-                width: 100%; /* Reduce container width for larger screens */
-                padding: 5%; /* Add padding to the sides */
-            }
-        }
-
         .card {
             border: none;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -60,16 +46,21 @@
             width: 100%;
             font-family: 'Pacifico', cursive;
             font-size: 150%;
+            transition: transform 0.2s; /* Smooth transition effect */
         }
-
         .btn-primary:hover {
             background-color: #584a3a;
+            transform: scale(1.05); /* Scale up by 5% on hover */
         }
 
         .form-control {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adding shadow to all form controls */
+            transition: transform 0.2s; /* Smooth transition effect */
         }
-
+        /* Enlarge on hover */
+        .form-control:hover {
+            transform: scale(1.05); /* Scale up by 5% on hover */
+        }
     </style>
 </head>
 <body>
@@ -120,7 +111,7 @@
 
                             <div class="mb-3">
                                 <label for="city" class="form-label">City:</label>
-                                <input type="text" class="form-control" id="city" name="city" required>
+                                <input type="text" class="form-control" id="city" name "city" required>
                             </div>
 
                             <div class="mb-3">
@@ -146,7 +137,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="expiration" class="form-label">Expiration Date:</label>
+                                <label for "expiration" class="form-label">Expiration Date:</label>
                                 <input type="text" class="form-control" id="expiration" name="expiration" required>
                             </div>
 

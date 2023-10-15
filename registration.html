@@ -31,14 +31,24 @@
             color: #a58e74;
         }
         .btn-primary {
+            font-family: 'Pacifico', cursive;
+            font-size: 150%;
             background-color: #a58e74;
             border: none;
+            transition: transform 0.2s; /* Smooth transition effect */
         }
         .btn-primary:hover {
             background-color: #584a3a;
+            transform: scale(1.05); /* Scale up by 5% on hover */
         }
         .form-control {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adding shadow to all form controls */
+            transition: transform 0.2s; /* Smooth transition effect */
+        }
+
+        /* Enlarge on hover */
+        .form-control:hover {
+        transform: scale(1.05); /* Scale up by 5% on hover */
         }
     </style>
 </head>
