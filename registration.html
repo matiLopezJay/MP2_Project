@@ -1,129 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Registration Page</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/logo1.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet">
     <style>
-      body {
-        background-color: #007bff;
-        font-family: "Roboto", sans-serif;
-      }
-      .card {
-        border: none;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      }
-      .card-title {
-        font-family: "Pacifico", cursive;
-        color: #007bff;
-      }
-      .btn-primary {
-        background-color: #007bff;
-        border: none;
-      }
-      .btn-primary:hover {
-        background-color: #0056b3;
-      }
+        body {
+            background-color: #ffefcd;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            width: 50%;
+        }
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            .container{
+            width: 100%;
+            padding: 0% 8%;
+            }   
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .card-title {
+            font-family: 'Pacifico', cursive;
+            color: #a58e74;
+        }
+        .btn-primary {
+            font-family: 'Pacifico', cursive;
+            font-size: 150%;
+            background-color: #a58e74;
+            border: none;
+            transition: transform 0.2s; /* Smooth transition effect */
+        }
+        .btn-primary:hover {
+            background-color: #584a3a;
+            transform: scale(1.05); /* Scale up by 5% on hover */
+        }
+        .form-control {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adding shadow to all form controls */
+            transition: transform 0.2s; /* Smooth transition effect */
+        }
+
+        /* Enlarge on hover */
+        .form-control:hover {
+        transform: scale(1.05); /* Scale up by 5% on hover */
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="card mt-5">
-        <div class="card-body">
-          <h2 class="card-title text-center">Create a new account</h2>
-          <form action="/submit_registration" method="post" class="mt-4">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="firstname">First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstname"
-                  name="firstname"
-                  required
-                />
-              </div>
-              <div class="form-group col-md-6">
-                <label for="lastname">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastname"
-                  name="lastname"
-                  required
-                />
-              </div>
+        <div class="card mt-5">
+            <div class="card-body">
+                <h2 class="card-title text-center">Create a new account</h2>
+                <form action="/submit_registration" method="post" class="mt-4">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email or Phone Number</label>
+                        <input type="text" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">New Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" class="form-control" id="birthday" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female" required>
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                </form>
             </div>
-            <div class="form-group">
-              <label for="email">Email or Phone Number</label>
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                name="email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="password">New Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                name="password"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="birthday">Birthday</label>
-              <input
-                type="date"
-                class="form-control"
-                id="birthday"
-                name="birthday"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label>Gender</label><br />
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  id="female"
-                  name="gender"
-                  value="female"
-                  required
-                />
-                <label class="form-check-label" for="female">Female</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  id="male"
-                  name="gender"
-                  value="male"
-                  required
-                />
-                <label class="form-check-label" for="male">Male</label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Sign Up
-            </button>
-          </form>
         </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
