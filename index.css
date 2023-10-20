@@ -120,3 +120,7 @@ h6 {
 /* off-canvas */
 /* //off-canvas */
 /* //Navbar */
+
+.product .m-3 {
+  width: 18rem;
+}

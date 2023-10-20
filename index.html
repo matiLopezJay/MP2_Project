@@ -6,7 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <title>Bare N Simple</title>
     <link rel="stylesheet" href="index.css" />
     <link
@@ -41,102 +40,87 @@
     <!-- //Loader -->
 
     <!------------------------------------------------------------------- NAVBAR ------------------------------------------------------------------->
-
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <div class="logo-container">
-          <a class="navbar-brand" href="#">
-            <img src="assets/logo1.jpg" style="width: 40px" alt="Logo" />
-          </a>
-          <p>Bare N Simple</p>
-        </div>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon" style="width: 20px"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto text-center">
-            <li class="nav-item">
-              <a
-                class="nav-link text-uppercase text-dark border-0"
-                aria-current="page"
-                href="#section1"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item text-uppercase text-dark border-0">
-              <a class="nav-link" href="#section2">About</a>
-            </li>
-            <li class="nav-item text-uppercase text-dark border-0">
-              <a class="nav-link" href="#section3">Contact</a>
-            </li>
-            <li class="nav-item text-uppercase text-dark border-0">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-          </ul>
-          <div class="btn-nav order-lg-2" nav-btn>
-            <button class="btn position-relative" type="button">
-              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+    <nav class="navbar sticky-top" style="background-color: #dbeac6;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <button class="btn position-relative" type="button">
-              <i class="fa-solid fa-heart fa-lg"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge bg-danger"
-                style="border-radius: 100%"
-                >2</span
-              >
-            </button>
-
-            <button
-              class="btn position-relative"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasScrolling"
-              aria-controls="offcanvasScrolling"
-            >
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              data-bs-scroll="true"
-              data-bs-backdrop="false"
-              tabindex="-1"
-              id="offcanvasScrolling"
-              aria-labelledby="offcanvasScrollingLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-                  Offcanvas with body scrolling
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <p>
-                  Try scrolling the rest of the page to see this option in
-                  action.
-                </p>
-              </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-          </div>
+
+            <a class="navbar-brand" href="#!" style="font-style:'Pacifico', cursive;">Bare N Simple</a>
+
+            <div class="btn-nav order-lg-2" nav-btns>
+                <button class="btn position-relative" type="button"><i class="fa-solid fa-user fa-lg"></i>
+                </button>
+
+                <button class="btn position-relative" type="button"><i class="fa-solid fa-heart fa-lg"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                        style="border-radius: 100%;">0</span>
+                </button>
+
+                <button class="btn position-relative" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                        class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                        style="border-radius: 100%;">0</span></button>
+
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="cart">
+                            <h2>Shopping Cart</h2>
+                            <ul id="cart-list">
+                            </ul>
+                            <div class="Checkout">
+                                <button class="check-out">Proceed to Checkout</button>
+                                <p>Total: $ <span id="cart-total">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
+
     <!------------------------------------------------------------------- END NAVBAR ------------------------------------------------------------------->
 
     <!------------------------------------------------------------------- Hero Section ------------------------------------------------------------------->
@@ -186,19 +170,20 @@
       </button>
     </div>
 
+    <img src="assets/SunScreens/IMG_4014.JPG" alt="">
     <!------------------------------------------------------------------- END Hero Section ------------------------------------------------------------------->
 
     <!------------------------------------------------------------------- COLLECTION PAGE ------------------------------------------------------------------->
 
     <section class="section2 text-bg-light" id="section2">
       <div class="fluid-container main-collection">
-        <h1>TOP COLLECTION</h1>
+        <h1 class="text-center pt-5">TOP COLLECTION</h1>
         <div class="line"></div>
         <div
           class="mesh-collection d-flex align-item-center justify-content-center row"
         >
           <!-- card 1 col-md-6-->
-          <div class="card col-md-6 m-3" style="width: 18rem">
+          <div class="card col-md-6 m-3 product" style="width: 18rem">
             <div
               class="badge bg-danger text-white position-absolute"
               style="top: 0.5rem; right: 0.5rem"
@@ -326,13 +311,13 @@
                           />
                           <button
                             type="button"
-                            class="btn btn-danger add-to-cart"
+                            class="btn btn-primary add-to-cart"
                           >
                             Add to cart
                           </button>
                           <div class="product-details mt-5 col-12">
                             <h3>Product Details</h3>
-                            <>Gently and thoroughly cleanse skin while boosting
+                            Gently and thoroughly cleanse skin while boosting
                             hydration with this fragrance-free cleansing gel.
                             Featuring dermatologist-recognized Hyaluronic Acid,
                             this lightweight cleanser increases skin's hydration
@@ -514,7 +499,7 @@
                             </button>
                             <div class="product-details mt-5 col-12">
                               <h3>Product Details</h3>
-                              <>Gently and thoroughly cleanse skin while
+                              Gently and thoroughly cleanse skin while
                               boosting hydration with this fragrance-free
                               cleansing gel. Featuring dermatologist-recognized
                               Hyaluronic Acid, this lightweight cleanser
@@ -761,103 +746,74 @@
 
     <!------------------------------------------------------------------- CONTACT PAGE ------------------------------------------------------------------->
 
-    <section class="text-bg-light pt-2" id="section3">
-      <div class="fluid-container">
-        <div class="container col-md-12">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="contact-us g-3 pt-4 text-black col-md-12 ms-5">
-                Contact <span style="color: #7d82a7">Us!</span>
-              </h2>
-              <div class="contact mt-5 ms-5">
-                <div class="col-md-12">
-                  <i class="fa-solid fa-phone fa-2xl"></i>
-                  <a href="#" class="contact-info"
-                    >bricksbasketball@gmail.com</a
-                  >
+    <section class="text-bg-light pt-5" id="section3">
+        <div class="fluid-container pt-5">
+            <div class="container col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="contact-us g-3 pt-4 text-black col-md-12 ms-5">Contact <span
+                                style="color:#497d59;">Us!</span>
+                        </h2>
+                        <div class="contact mt-5 ms-5">
+                            <div class="col-md-12">
+                                <i class="fa-solid fa-phone fa-2xl"></i>
+                                <a href="#" class="contact-info">bareNsimple@gmail.com</a>
+                            </div>
+
+                            <div class="col-md-12 my-4">
+                                <i class="fa-solid fa-square-phone fa-2xl"></i>
+                                <a href="#" class="contact-info">(+63) 938 282 4353</a>
+                            </div>
+
+                            <div class="col-md-12 my-4">
+                                <i class="fa-solid fa-map-location-dot fa-2xl"></i>
+                                <a href="#" class="contact-info">Cainta, Rizal</a>
+                            </div>
+
+                            <div class="col-md-12 my-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.095548394777!2d121.11375307667089!3d14.593630985892021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b879abce4689%3A0x933363f1192674ea!2sHomestead%20Dr%2C%20Santo%20Domingo%2C%20Cainta%2C%201900%20Rizal!5e0!3m2!1sen!2sph!4v1693470860969!5m2!1sen!2sph"
+                                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" class="contact-map"></iframe>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form col-md-6 text-bg-dark mx-auto rounded pt-5"
+                        style="background-color: #dbeac6 !important;">
+                        <form class="row g-3 p-2">
+
+                            <div class="col-md-12">
+                                <input type="email" class="form-control border border-black" id="inputFName"
+                                    placeholder="Name">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control border border-black" id="inputEmail"
+                                    placeholder="Email">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control border border-black" id="inputPNumber"
+                                    placeholder="Phone Number">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea name="Message" class="form-control border border-black" id="Message-form"
+                                    cols="30" rows="7" placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="d-grid gap-2 col-3 mb-5">
+                                <a href=""><button type="button" class="btn btn-dark rounded rounded-5 px-3 bold me-2">
+                                        Submit</button></a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="col-md-12 my-4">
-                  <i class="fa-solid fa-square-phone fa-2xl"></i>
-                  <a href="#" class="contact-info">(+63) 938 282 4353</a>
-                </div>
-
-                <div class="col-md-12 my-4">
-                  <i class="fa-solid fa-map-location-dot fa-2xl"></i>
-                  <a href="#" class="contact-info">Cainta, Rizal</a>
-                </div>
-
-                <div class="col-md-12 my-4">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.095548394777!2d121.11375307667089!3d14.593630985892021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b879abce4689%3A0x933363f1192674ea!2sHomestead%20Dr%2C%20Santo%20Domingo%2C%20Cainta%2C%201900%20Rizal!5e0!3m2!1sen!2sph!4v1693470860969!5m2!1sen!2sph"
-                    width="400"
-                    height="200"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="contact-map"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <div
-              class="form col-md-6 text-bg-dark mx-auto rounded pt-5"
-              style="background-color: #7d82a7 !important"
-            >
-              <form class="row g-3 p-2">
-                <div class="col-md-12">
-                  <input
-                    type="email"
-                    class="form-control border border-black"
-                    id="inputFName"
-                    placeholder="Name"
-                  />
-                </div>
-
-                <div class="col-md-12">
-                  <input
-                    type="text"
-                    class="form-control border border-black"
-                    id="inputEmail"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="col-md-12">
-                  <input
-                    type="text"
-                    class="form-control border border-black"
-                    id="inputPNumber"
-                    placeholder="Phone Number"
-                  />
-                </div>
-
-                <div class="col-md-12">
-                  <textarea
-                    name="Message"
-                    class="form-control border border-black"
-                    id="Message-form"
-                    cols="30"
-                    rows="7"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-
-                <div class="d-grid gap-2 col-3 mb-5">
-                  <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-dark rounded rounded-5 px-3 bold me-2"
-                    >
-                      Submit
-                    </button></a
-                  >
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="d-flex justify-content-center" id="products"></div>
     </section>
 
     <!------------------------------------------------------------------- END CONTACT PAGE ------------------------------------------------------------------->\
@@ -871,30 +827,25 @@
     </script>
 
     <script src="scripts.js"></script>
-  </body>
-  <footer>
-    <footer class="text-center p-1 bg-secondary text-white">
-      <div class="socials-contact d-flex my-4 justify-content-center">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer class="text-center p-1 bg-secondary text-white ">
+    <div class="socials-contact d-flex my-4 justify-content-center">
         <a href=""><i class="fa-brands fa-facebook fa-2xl me-4"></i></a>
-        <a href=""
-          ><i class="fa-brands fa-facebook-messenger fa-2xl me-4"></i
-        ></a>
+        <a href=""><i class="fa-brands fa-facebook-messenger fa-2xl me-4"></i></a>
         <a href=""><i class="fa-brands fa-instagram fa-2xl me-4"></i></a>
         <a href=""><i class="fa-brands fa-tiktok fa-2xl me-4"></i></a>
-      </div>
-      <p>Copyright © Bricks Apparel 2023</p>
-    </footer>
-  </footer>
+    </div>
+    <p>Copyright © Bricks Apparel 2023</p>
+</footer>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"
-  ></script>
+
+
 </html>
